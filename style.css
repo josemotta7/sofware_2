@@ -1,0 +1,638 @@
+/* =========================================================
+   FONTES (necessário para Cormorant Garamond e Montserrat)
+   ========================================================= */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+/* =========================================================
+   RESET
+   ========================================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #cfe3d3;
+  line-height: 1.6;
+  background: #0b0f0c;
+}
+
+/* =========================================================
+   TIPOGRAFIA
+   ========================================================= */
+/*
+   Títulos: Cormorant Garamond — serifada, elegante
+   Textos:  Montserrat — limpa, leve, usada em menus/botões/descrições
+*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 500;
+}
+
+p, a, button, input, nav, span {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 5%;
+  background: #0b0f0c;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* LOGO */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.logo img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  display: block;
+}
+
+.logo span {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 5px;
+  color: #d8f0dc;
+}
+
+/* NAV */
+nav {
+  display: flex;
+  gap: 2.3rem;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #8fb89b;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #6fcf8f;
+}
+
+/* =========================================================
+   BOTÃO PRINCIPAL
+   ========================================================= */
+.btn-primary {
+  background: #2f6b45;
+  color: white;
+  padding: 0.65rem 1.3rem;
+  border: none;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background 0.3s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  background: #3a8a57;
+}
+
+/* =========================================================
+   HERO
+   ========================================================= */
+.hero {
+  /* Troque a url() abaixo pela imagem real de fundo do hero */
+  background:
+    linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)),
+    url('sua-imagem-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  color: #d9f2df;
+  padding: 0 5%;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-content .eyebrow {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.65rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  opacity: 0.8;
+}
+
+.hero-content h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 4.2rem;
+  font-weight: 500;
+  line-height: 0.95;
+  margin-bottom: 1.3rem;
+  letter-spacing: -1px;
+}
+
+.hero-content h1 em {
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  background: linear-gradient(120deg, #a8f0bd 0%, #6fcf8f 55%, #3f8a57 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 4px 24px rgba(111, 207, 143, 0.35);
+}
+
+.hero-content p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.7;
+  margin-bottom: 1.8rem;
+  opacity: 0.95;
+}
+
+.hero-content .subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.85rem;
+  font-style: normal;
+  line-height: 1.7;
+  opacity: 0.9;
+  max-width: 400px;
+  margin-bottom: 2rem;
+}
+
+/* =========================================================
+   BOTÃO SECUNDÁRIO
+   ========================================================= */
+.btn-secondary {
+  background: transparent;
+  color: #d9f2df;
+  padding: 0.75rem 1.4rem;
+  border: 1px solid rgba(140, 220, 160, 0.8);
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.68rem;
+  font-weight: 400;
+  transition: all 0.3s;
+}
+
+.btn-secondary:hover {
+  background: #2f6b45;
+  color: #d9f2df;
+}
+
+/* =========================================================
+   AMBIENTES
+   ========================================================= */
+.ambientes-section {
+  padding: 5.5rem 5%;
+  background: #0b0f0c;
+}
+
+.section-header {
+  margin-bottom: 3rem;
+  max-width: 850px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: end;
+}
+
+.section-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.62rem;
+  letter-spacing: 3px;
+  color: #7fae8c;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+}
+
+.section-header h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 0.98;
+  margin-bottom: 1rem;
+  color: #d8f0dc;
+}
+
+.section-header p {
+  color: #9fc2aa;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+/* GRID DE AMBIENTES */
+.ambientes-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.2rem;
+}
+
+.ambiente-card {
+  background: transparent;
+  overflow: hidden;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.ambiente-card:hover {
+  transform: translateY(-5px);
+}
+
+.ambiente-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  background: #182018;
+}
+
+.ambiente-card h3 {
+  padding: 0.8rem 0;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.15rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #1c261e;
+}
+
+.ambiente-card a {
+  color: #cfe3d3;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.ambiente-card a:hover {
+  color: #6fcf8f;
+}
+
+/* =========================================================
+   PROJETOS
+   ========================================================= */
+.projetos-section {
+  padding: 5.5rem 5%;
+  background: #10140f;
+}
+
+.projetos-container {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.projetos-content .section-label {
+  margin-bottom: 0.8rem;
+}
+
+.projetos-content h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3.2rem;
+  font-weight: 500;
+  line-height: 0.95;
+  margin-bottom: 1.5rem;
+  color: #d8f0dc;
+}
+
+.projetos-content p {
+  color: #a8c9b2;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  line-height: 1.8;
+  max-width: 400px;
+}
+
+/* =========================================================
+   BOTÃO OUTLINE
+   ========================================================= */
+.btn-outline {
+  background: transparent;
+  color: #cfe3d3;
+  padding: 0.7rem 1.4rem;
+  border: 1px solid #4a8a5c;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.68rem;
+  font-weight: 400;
+  transition: all 0.3s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-outline:hover {
+  background: #2f6b45;
+  color: white;
+}
+
+/* IMAGEM DOS PROJETOS */
+.projetos-image {
+  background: #182018;
+  height: 390px;
+  border: 1px solid #3f7350;
+  padding: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.projetos-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* =========================================================
+   CTA
+   ========================================================= */
+.cta-section {
+  padding: 4rem 7%;
+  background: #141a15;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.cta-content h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 0.95;
+  margin-bottom: 1rem;
+  color: #d8f0dc;
+}
+
+.cta-content p {
+  color: #a8c9b2;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 300;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+footer {
+  background: #0b0f0c;
+  padding: 2rem 5%;
+  border-top: 1px solid #1c261e;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.footer-logo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 3px;
+  margin-bottom: 1.5rem;
+  color: #d8f0dc;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-links a {
+  color: #a8c9b2;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 400;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #6fcf8f;
+}
+
+/* REDES SOCIAIS */
+.social-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.social-links a {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #2a3a2c;
+  border-radius: 50%;
+  color: #a8c9b2;
+  text-decoration: none;
+  transition: all 0.3s;
+  font-size: 0.8rem;
+}
+
+.social-links a:hover {
+  background: #2f6b45;
+  color: white;
+  border-color: #2f6b45;
+}
+
+/* FOOTER BOTTOM */
+.footer-bottom {
+  grid-column: 1 / -1;
+  padding-top: 1.5rem;
+  border-top: 1px solid #1c261e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.6rem;
+  color: #7fae8c;
+}
+
+/* =========================================================
+   RESPONSIVIDADE
+   ========================================================= */
+@media (max-width: 900px) {
+  nav {
+    gap: 1.2rem;
+  }
+
+  .hero-content h1 {
+    font-size: 3.5rem;
+  }
+
+  .ambientes-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-header {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .projetos-container {
+    grid-template-columns: 1fr;
+  }
+
+  .projetos-image {
+    height: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 1rem 5%;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  nav a {
+    font-size: 0.8rem;
+  }
+
+  .btn-primary {
+    display: none;
+  }
+
+  .hero {
+    height: 500px;
+    padding: 2rem 5%;
+    align-items: center;
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+    line-height: 0.95;
+  }
+
+  .hero-content p {
+    font-size: 0.8rem;
+  }
+
+  .ambientes-section {
+    padding: 4rem 5%;
+  }
+
+  .section-header h2 {
+    font-size: 2.5rem;
+  }
+
+  .ambientes-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .ambiente-card img {
+    height: 180px;
+  }
+
+  .projetos-container,
+  .cta-section {
+    grid-template-columns: 1fr;
+  }
+
+  .projetos-content h2 {
+    font-size: 2.7rem;
+  }
+
+  .cta-section {
+    padding: 4rem 5%;
+    gap: 2rem;
+  }
+
+  .cta-content h2 {
+    font-size: 2.6rem;
+  }
+
+  footer {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .social-links {
+    justify-content: flex-start;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .logo span {
+    font-size: 0.9rem;
+  }
+
+  nav {
+    gap: 0.8rem;
+  }
+
+  nav a {
+    font-size: 0.72rem;
+  }
+
+  .hero {
+    height: 500px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.6rem;
+  }
+
+  .ambientes-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ambiente-card img {
+    height: 220px;
+  }
+
+  .projetos-image {
+    height: 280px;
+  }
+}

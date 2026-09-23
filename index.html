@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Adicionada meta description para melhoria de SEO -->
+  <meta name="description" content="Venature - Design de Interiores e móveis planejados. Projetos personalizados que unem funcionalidade, beleza e o seu estilo de vida.">
+  
+  <title>Venature - Design de Interiores</title>
+
+  <!-- Fontes utilizadas no projeto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS principal -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- =====================================================
+       HEADER
+  ====================================================== -->
+  <header>
+    <div class="logo">
+      <img src="vena.png" alt="Logotipo da Venature Design de Interiores">
+      <span>VENATURE</span>
+    </div>
+
+    <!-- Adicionado aria-label e lista estruturada para acessibilidade -->
+    <nav aria-label="Navegação principal">
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#ambientes">Ambientes</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#sobre">Sobre nós</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <!-- Adicionado type="button" para evitar comportamentos padrão indesejados -->
+      <button class="btn-primary" type="button">
+        Solicite seu projeto &rarr;
+      </button>
+    </nav>
+  </header>
+
+  <!-- =====================================================
+       CONTEÚDO PRINCIPAL (MAIN)
+  ====================================================== -->
+  <main>
+    
+    <!-- HERO -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <p class="eyebrow">MÓVEIS PLANEJADOS</p>
+        
+        <h1 id="hero-title">
+          Seu espaço,<br>
+          <em>do seu jeito.</em>
+        </h1>
+        
+        <p class="subtitle">
+          Projetos personalizados que unem funcionalidade, beleza e o seu estilo de vida.
+        </p>
+        
+        <button class="btn-secondary" type="button">
+          Conheça nossos ambientes &rarr;
+        </button>
+      </div>
+    </section>
+
+    <!-- AMBIENTES -->
+    <section class="ambientes-section" id="ambientes" aria-labelledby="ambientes-title">
+      <div class="section-header">
+        <div>
+          <p class="section-label">AMBIENTES</p>
+          <h2 id="ambientes-title">
+            Inspiração para todos<br>
+            os momentos
+          </h2>
+        </div>
+        
+        <p>
+          Cada ambiente é pensado para atender às suas necessidades e valorizar o que é mais importante: o seu bem-estar.
+        </p>
+      </div>
+
+      <div class="ambientes-grid">
+        <!-- Cozinha -->
+        <!-- Substituído div genérica por <article> para itens de grid independentes -->
+        <article class="ambiente-card">
+          <!-- Adicionado loading="lazy" em imagens fora do escopo inicial -->
+          <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=250&fit=crop" alt="Cozinha moderna com móveis planejados em tons claros" loading="lazy">
+          <h3>
+            <span>Cozinhas</span>
+            <a href="#" aria-label="Ver projetos de cozinhas">&rarr;</a>
+          </h3>
+        </article>
+
+        <!-- Dormitório -->
+        <article class="ambiente-card">
+          <img src="https://images.unsplash.com/photo-1540932239986-310128078ceb?w=400&h=250&fit=crop" alt="Dormitório aconchegante com iluminação suave" loading="lazy">
+          <h3>
+            <span>Dormitórios</span>
+            <a href="#" aria-label="Ver projetos de dormitórios">&rarr;</a>
+          </h3>
+        </article>
+
+        <!-- Sala -->
+        <article class="ambiente-card">
+          <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400&h=250&fit=crop" alt="Sala de estar sofisticada com painel sob medida" loading="lazy">
+          <h3>
+            <span>Salas</span>
+            <a href="#" aria-label="Ver projetos de salas">&rarr;</a>
+          </h3>
+        </article>
+
+        <!-- Home Office -->
+        <article class="ambiente-card">
+          <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=400&h=250&fit=crop" alt="Escritório home office funcional e organizado" loading="lazy">
+          <h3>
+            <span>Home Office</span>
+            <a href="#" aria-label="Ver projetos de Home Office">&rarr;</a>
+          </h3>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section class="projetos-section" id="projetos" aria-labelledby="projetos-title">
+      <div class="projetos-container">
+        <div class="projetos-content">
+          <p class="section-label">PROJETOS</p>
+          
+          <h2 id="projetos-title">
+            Projetos que<br>
+            transformam<br>
+            espaços
+          </h2>
+          
+          <p>
+            Do conceito à instalação, acompanhamos cada detalhe para criar ambientes únicos, funcionais e cheios de personalidade.
+          </p>
+          
+          <button class="btn-outline" type="button">
+            Ver nossos projetos &rarr;
+          </button>
+        </div>
+
+        <div class="projetos-image">
+          <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=500&h=400&fit=crop" alt="Vista detalhada de um projeto residencial de interiores" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA / CONTATO -->
+    <section class="cta-section" id="contato" aria-labelledby="contato-title">
+      <div class="cta-content">
+        <p class="section-label">SOLICITE SEU ORÇAMENTO</p>
+        
+        <h2 id="contato-title">
+          Vamos planejar juntos<br>
+          <em>o seu novo espaço?</em>
+        </h2>
+        
+        <p>
+          Fale com a nossa equipe e comece agora o seu projeto de móveis planejados. É rápido, fácil e sem compromisso.
+        </p>
+      </div>
+
+      <div>
+        <button class="btn-primary" type="button">
+          Fale com a Venature &rarr;
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =====================================================
+       FOOTER
+  ====================================================== -->
+  <footer>
+    <div class="footer-info">
+      <div class="footer-logo">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M20 8L28 14L24 22L16 22L12 14L20 8Z" fill="#4ECDC4" />
+          <path d="M18 16L22 16L20 20L18 20L18 16Z" fill="#1a1a1a" />
+          <path d="M20 8L20 4M24 12L26 10M16 12L14 10" stroke="#4ECDC4" stroke-width="1.5" />
+        </svg>
+        <span>VENATURE</span>
+      </div>
+      <p>&copy; 2024 Venature. Todos os direitos reservados.</p>
+    </div>
+
+    <!-- Links estruturados em lista -->
+    <nav class="footer-links" aria-label="Links do rodapé">
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#ambientes">Ambientes</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#sobre">Sobre nós</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+
+    <!-- Redes sociais estruturadas em lista -->
+    <ul class="social-links" aria-label="Redes sociais">
+      <li><a href="#" title="Instagram" aria-label="Siga-nos no Instagram">📷</a></li>
+      <li><a href="#" title="Facebook" aria-label="Siga-nos no Facebook">f</a></li>
+      <li><a href="#" title="YouTube" aria-label="Siga-nos no YouTube">▶</a></li>
+    </ul>
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+      <p>Todos os direitos reservados</p>
+      <p>Móveis planejados para uma vida melhor</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js" defer></script>
+
+</body>
+</html>
